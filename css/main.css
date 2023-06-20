@@ -5,7 +5,7 @@
 }
 
 body > header {
-    background-color: darkgray;
+    background-color: rgb(180, 180, 180);
     padding: 16px 0;
     color: azure;
 }
