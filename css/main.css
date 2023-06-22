@@ -4,7 +4,7 @@
     padding: 0;
     width: 100%;
     max-width: 1366px;
-    align-items: justify;
+    align-items: center;
 }
 
 body > header {
