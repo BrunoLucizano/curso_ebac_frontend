@@ -9,15 +9,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>EBAC Banking</h1>
-        <h2>Depósitos</h2>
-        <form>
-            <input type="text" required placeholder="Nome completo do beneficiário" />
-            <input type="number" required placeholder="Número da conta" />
-            <input type="number" required placeholder="Valor" />
-            <textarea placeholder="Descrição (opcional)"></textarea>
-            <button type="submit">Depositar</button>
+        <h1>EBAC Saúde</h1>
+        <h2>Sua saúde hoje</h2>
+        <form id="form-saude">
+            <input type="number" id="meta-diaria" placeholder="Qual sua meta diária?" />
+            <input type="number" id="exe-dia" required placeholder="Qual seu resultado hoje?" />
+            <button type="submit">Avaliar</button>
         </form>
-    </div>
+        </div>
+    <script src="main.js"></script>
 </body>
 </html>
