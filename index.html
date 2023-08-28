@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML com JS</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <div class="container">
-        <h1>EBAC Saúde</h1>
-        <h2>Sua saúde hoje</h2>
-        <form id="form-saude">
-            <input type="number" id="meta-diaria" placeholder="Qual sua meta diária?" />
-            <input type="number" id="exe-dia" required placeholder="Qual seu resultado hoje?" />
-            <button type="submit">Avaliar</button>
+        <header>
+            <img src="imagens/lista-de-tarefas-86668787.jpg" alt="lista de tarefas">
+            <h1>Lista de tarefas</h1>
+        </header>
+        <form id="form-lista">
+            <input type="text" id="Tarefa" required placeholder="Insira a Tarefa" />
+            <button type="submit">Adicionar +</button>
         </form>
-        </div>
-    <script src="main.js"></script>
+    </div>
+        <table>
+            <tbody>
+                <ul>
+                    <li>
+                        <div class="lista_tarefas">
+                            limpar casa
+                        </div>
+                    </li>
+                </ul>
+            </tbody>
+        </table>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./main.js"></script> 
 </body>
 </html>
