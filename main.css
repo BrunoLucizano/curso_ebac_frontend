@@ -18,7 +18,14 @@ header { /*cabeçalho*/
 header button {/*botão do cabeçalho*/
     margin-left: 16px;/*margem a esquerda do botão*/
 }
-.container img {/*imagem dentro do .container*/
+
+.lista_tarefas {
+    background-color: #fff;/*definir cor de fundo*/
+    text-align: center;
+    justify-content: center;
+}
+
+.incluir_lista img {/*imagem dentro do .container*/
     max-width: 30px;/*definindo tamanho máximo do elemento*/
 }
 
