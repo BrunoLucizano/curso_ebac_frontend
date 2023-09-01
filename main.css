@@ -22,7 +22,7 @@ header button {/*botão do cabeçalho*/
 .lista_tarefas {
     background-color: #fff;/*definir cor de fundo*/
     text-align: center;
-    justify-content: center;
+    cursor: pointer;
 }
 
 .incluir_lista img {/*imagem dentro do .container*/
@@ -33,4 +33,8 @@ form {
     background-color: #fff;
     padding: 24px 0;
     text-align: center;
+}
+
+.feito {
+    text-decoration: line-through;
 }

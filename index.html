@@ -16,22 +16,19 @@
             <h1>Lista de tarefas</h1>
         </header>
         <form id="form-lista">
-            <input type="text" class="Tarefa" required placeholder="Insira a Tarefa" />
-            <button type="submit">Adicionar +</button>
+            <input type="text" id="nova-tarefa" required placeholder="Insira a Tarefa" />
+            <button type="button" id="adicionar-tarefa">Adicionar +</button>
         </form>
-    </div class="incluir_lista">
+    </div>
+    <div class="lista_tarefas">
         <table>
             <tbody>
-                <ul>
-                    <li>
-                        <div class="lista_tarefas">
-                            limpar casa
-                        </div>
-                    </li>
+                <ul id="lista-tarefas">
                 </ul>
             </tbody>
         </table>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./main.js"></script> 
 </body>
 </html>
