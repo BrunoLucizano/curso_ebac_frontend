@@ -24,3 +24,5 @@ $(document).ready(function() {
         $(this).toggleClass('feito'); // Adiciona ou remove a classe "feito" ao <li> clicado
     });
 });
+
+alert
