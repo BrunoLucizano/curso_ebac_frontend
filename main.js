@@ -1,11 +1,20 @@
 $(document).ready(function () {
 
     $('#telefone').mask('(00) 00000-0000');
+    $('#cpf').mask('000.000.000-00');
+    $('#estado').mask('SS');
+    $('#cep').mask('00000-000');
+
+    $.validator.addMethod("doisNomes", function(value, element) {
+        var nomes = value.split(" ");
+        return nomes.length >= 2;
+    }, "Por favor, insira ao menos dois nomes.");
 
     $('form').validate({
         rules: {
             nome: {
-                required: true
+                required: true,
+                doisNomes: true
             },
             email: {
                 required: true,
@@ -37,7 +46,7 @@ $(document).ready(function () {
             }
         },
         messages: {
-            nome: 'Por favor, insira seu nome.',
+            nome: 'Por favor, insira seu nome completo.',
             email: 'Por favor, insira seu email.',
             telefone: 'Por favor, insira seu telefone.',
             cpf: 'Por favor, insira seu CPF.',
