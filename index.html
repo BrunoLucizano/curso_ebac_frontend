@@ -1,38 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <style>
-
-        form, h2 {
-            max-width: 60%;
-            padding: 32px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="row">
-        <div class="col">
-            <H2>Formulário de cadastro</H2>
-            <form>
-                <label class="form-label" for="nome">Seu nome:</label>
-                <input class="form-control" type="text" id="nome">
-                <label class="form-label" for="email">Seu e-mail:</label>
-                <input class="form-control" type="email" id="email">
-                <label class="form-label" for="telefone">Seu telefone:</label>
-                <input class="form-control" type="tel" id="telefone">
-                <label class="form-label" for="mensagem">Sua mensagem:</label>
-                <textarea id="mensagem" class="form-control"></textarea>
-                <div class="form-check form-switch">
-                    <label class="form-check-label" for="aceito-termos">Li e concordo com os termos.</label>
-                    <input class="form-check-input" type="checkbox" id="aceito-termos">
-                </div>
-                <button class="btn btn-success">Enviar</button>
-            </form>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="https://via.placeholder.com/120x70" />
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
