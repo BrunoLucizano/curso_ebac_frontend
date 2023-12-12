@@ -16,7 +16,7 @@ li {
 }
 
 header {
-  background-color: $corPrincipal;
+  background-color: variaveis.$corPrincipal;
   position: sticky;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@ header {
       margin-left: 24px;
 
       a {
-        color: $corTexto;
+        color: variaveis.$corTexto;
         text-decoration: none;
       }
     }
@@ -62,8 +62,8 @@ section {
 
       .product-button {
         display: block;
-        background-color: $corBotao;
-        color: $corTexto;
+        background-color: variaveis.$corBotao;
+        color: variaveis.$corTexto;
         text-align: center;
         padding: 8px 0;
         border-radius: 8px;
@@ -71,7 +71,7 @@ section {
         text-decoration: none;
 
         &:hover {
-          background-color: $corBotaoHover;
+          background-color: variaveis.$corBotaoHover;
         }
       }
     }

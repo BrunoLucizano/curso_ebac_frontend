@@ -1,17 +1,92 @@
-/* Error: Undefined variable.
- *    ,
- * 19 |   background-color: $corPrincipal;
- *    |                     ^^^^^^^^^^^^^
- *    '
- *   source\main.scss 19:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 19 \2502    background-color: $corPrincipal;\d\a    \2502                      ^^^^^^^^^^^^^\a    \2575 \a   source\\main.scss 19:21  root stylesheet";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
 }
+
+body {
+  background-color: #f5f6fa;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #182C61;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+header .menu {
+  display: flex;
+}
+header .menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+header .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 56px 0;
+}
+section .products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+section .products .product-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+section .products .product-item .product-button {
+  display: block;
+  background-color: #44bd32;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+section .products .product-item .product-button:hover {
+  background-color: #4cd137;
+}
+@media screen and (max-width: 1023px) {
+  section .container {
+    max-width: 80%;
+  }
+  section .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section .products {
+    display: block;
+  }
+  section .products .product-item {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
