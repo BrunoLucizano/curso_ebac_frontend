@@ -1,7 +1,5 @@
-require = require('esm')(module /*, options*/);
-
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const pump = require('pump');

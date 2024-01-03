@@ -10,11 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "pump": "^3.0.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.7"
   },
   "description": "",
   "dependencies": {
