@@ -11,7 +11,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('imagemin', function () {
-  return gulp.src('src/images/*')
+  return gulp.src('./images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/images'));
 });
